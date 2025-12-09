@@ -1,0 +1,14 @@
+{
+  "symbol": "BNS.TO",
+  "mode": "returns",
+  "horizon": 1,
+  "feature_names": [
+    "close",
+    "volume",
+    "close_sma_5",
+    "close_sma_20",
+    "close_std_20",
+    "return_1",
+    "return_5"
+  ]
+}

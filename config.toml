@@ -1,0 +1,94 @@
+[api.yfinance]
+enabled = true
+rate_limit = 2000
+timeout = 30
+retry_count = 3
+
+[api.alpha_vantage]
+enabled = false
+base_url = "https://www.alphavantage.co/query"
+rate_limit = 25
+timeout = 30
+
+[api.news_api]
+enabled = false
+base_url = "https://newsapi.org/v2"
+rate_limit = 100
+timeout = 30
+
+[api.finnhub]
+enabled = false
+base_url = "https://finnhub.io/api/v1"
+rate_limit = 60
+timeout = 30
+
+[api.openai]
+enabled = true
+base_url = "https://api.openai.com/v1"
+model = "gpt-5-mini"
+max_tokens = 1000
+temperature = 0.7
+timeout = 60
+
+[api.anthropic]
+enabled = true
+base_url = "https://api.anthropic.com/v1"
+model = "claude-sonnet-4-5-20250929"
+max_tokens = 1000
+temperature = 0.7
+timeout = 60
+
+[api.deepseek]
+enabled = true
+base_url = "https://api.deepseek.com/v1"
+model = "deepseek-reasoner"
+max_tokens = 8000
+temperature = 1.0
+timeout = 120
+
+[database]
+type = "sqlite"
+path = "data/storage/stocks.db"
+timeout = 30.0
+cache_enabled = true
+cache_ttl_hours = 24
+max_cache_size_mb = 500
+
+[database.tables]
+price_data = "prices"
+data_cache = "data_cache"
+models = "models"
+training_results = "training_results"
+backtest_results = "backtest_results"
+
+[llm.openai]
+enabled = false
+model = "gpt-4o"
+temperature = 0.7
+max_tokens = 1000
+system_prompt = "You are an expert AI trading agent."
+
+[llm.anthropic]
+enabled = true
+model = "claude-sonnet-4-5-20250929"
+temperature = 0.7
+max_tokens = 1000
+system_prompt = "You are an expert AI trading agent."
+
+[llm.deepseek]
+enabled = false
+model = "deepseek-reasoner"
+temperature = 1.0
+max_tokens = 8000
+system_prompt = "You are an expert AI trading agent."
+
+[llm.agent_behavior]
+confidence_threshold = 0.7
+max_position_size = 0.2
+stop_loss_pct = 0.05
+take_profit_pct = 0.15
+
+[llm.cost_tracking]
+enabled = true
+max_daily_cost = 10.0
+max_monthly_cost = 200.0

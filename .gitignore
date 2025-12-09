@@ -1,0 +1,55 @@
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+venv/
+.env/
+.venv/
+env/
+
+# --- Environment & local config ---
+.env
+*.local
+*.secret
+*.bak
+
+# --- Databases (your stocks.db etc.) ---
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
+# --- Jupyter notebooks cache ---
+.ipynb_checkpoints/
+
+# --- Logs & temp files ---
+logs/
+*.log
+*.tmp
+*.temp
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Claude Code & AI tools ---
+.claude/
+.history/
+.aider*
+
+# --- Node modules (if using JS/TS) ---
+node_modules/
+
+# --- Python distribution / build ---
+dist/
+build/
+*.egg-info/
+
+# --- Data dumps (optional) ---
+# If you want data/ tracked, delete this line.
+data/
