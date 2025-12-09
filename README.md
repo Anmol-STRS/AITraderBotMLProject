@@ -382,14 +382,6 @@ curl http://localhost:8000/api/health
 - API keys should have minimal required permissions
 - Set cost limits for LLM API usage
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
 ## License
 
 This project is for educational and research purposes.
